@@ -1,0 +1,20 @@
+{
+  "name": "huddle-landing-page",
+  "version": "1.0.0",
+  "description": "Huddle Landing page project from Forntend Mentor",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/scss/main.scss ./assets/css/style.css"
+  },
+  "keywords": [
+    "frontend",
+    "project",
+    "scss",
+    "web",
+    "html",
+    "css",
+    "practice"
+  ],
+  "author": "Wilver \"Zephyro\" Salazar",
+  "license": "MIT"
+}

@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13.5em;
+  height: 2.75em;
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.5rem;
+  font-size: 0.75rem;
+  color: $violet;
+  box-shadow: 3px 3px 5px hsl(0, 0%, 0%, 0.5);
+  transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
+
+  &:active {
+    background-color: lighten($softMagenta, $amount: 15);
+    color: hsl(0, 0%, 100%);
+  }
+}

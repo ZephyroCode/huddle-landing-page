@@ -1,0 +1,26 @@
+html {
+  font-size: 16px;
+  font-family: $bodyTypo;
+}
+
+body {
+  background-color: $violet;
+  color: hsl(0, 0%, 100%);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.body {
+  background: url(../images/bg-mobile.svg) no-repeat top center/contain;
+}

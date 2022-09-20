@@ -1,0 +1,22 @@
+.footer {
+  text-align: center;
+  margin-bottom: 0.5em;
+
+  &__text {
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+
+  &__link {
+    color: $softMagenta;
+    transition: color 0.2s ease-in-out;
+
+    &:active {
+      color: lighten($softMagenta, $amount: 10);
+    }
+
+    &:hover {
+      color: lighten($softMagenta, $amount: 17);
+    }
+  }
+}
