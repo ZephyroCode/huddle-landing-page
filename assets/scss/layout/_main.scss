@@ -5,27 +5,32 @@
   &__img {
     width: 100%;
     margin-bottom: 1em;
+    @media screen and (min-width: 1024px) {
+      padding: 2em 2em 0 2em;
+      width: 50%;
+    }
   }
-
   &__title {
     padding: 0 0.5em;
     font-family: $headingsTypo;
     font-size: 1.5rem;
     line-height: 1.5;
+    @media screen and (min-width: 1024px) {
+      font-size: 1.7rem;
+      width: 75%;
+    }
   }
-
   &__text {
     margin-bottom: 1em;
     padding: 0 0.5em;
     font-size: 1rem;
     line-height: 1.5;
   }
-
   &__socials {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2em 0;
+    padding: 0 0 2em 0;
 
     & li {
       display: flex;
@@ -38,6 +43,32 @@
       font-size: 0.85rem;
       border: 1px solid hsl(0, 0%, 100%);
       border-radius: 50%;
+      transition: color .2s ease-in-out, border-color .2s ease-in-out;
+
+      &:hover {
+        color: $softMagenta;
+        border-color: $softMagenta;
+      }
     }
+
+    @media screen and (min-width: 1024px) {
+      justify-content: flex-end;
+      padding: 0 3em 0 0;
+      margin: 0;
+    }
+  }
+  &__content {
+    @media screen and (min-width: 1024px) {
+      padding: 3em 5em 0 0;
+      text-align: left;
+      width: 45%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2em;
   }
 }

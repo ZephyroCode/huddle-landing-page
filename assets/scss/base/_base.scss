@@ -22,5 +22,10 @@ a {
 }
 
 .body {
+  height: 100vh;
   background: url(../images/bg-mobile.svg) no-repeat top center/contain;
+  
+  @media screen and (min-width: 1024px) {
+    background: url(../images/bg-desktop.svg) no-repeat top center/contain;
+  }
 }

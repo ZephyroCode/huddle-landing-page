@@ -22,7 +22,13 @@ a {
 }
 
 .body {
+  height: 100vh;
   background: url(../images/bg-mobile.svg) no-repeat top center/contain;
+}
+@media screen and (min-width: 1024px) {
+  .body {
+    background: url(../images/bg-desktop.svg) no-repeat top center/contain;
+  }
 }
 
 .header {
@@ -30,6 +36,16 @@ a {
 }
 .header__img {
   width: 7em;
+}
+@media screen and (min-width: 1024px) {
+  .header__img {
+    width: 10em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 1.5em 6em;
+  }
 }
 
 .main {
@@ -40,11 +56,23 @@ a {
   width: 100%;
   margin-bottom: 1em;
 }
+@media screen and (min-width: 1024px) {
+  .main__img {
+    padding: 2em 2em 0 2em;
+    width: 50%;
+  }
+}
 .main__title {
   padding: 0 0.5em;
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   line-height: 1.5;
+}
+@media screen and (min-width: 1024px) {
+  .main__title {
+    font-size: 1.7rem;
+    width: 75%;
+  }
 }
 .main__text {
   margin-bottom: 1em;
@@ -56,7 +84,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em 0;
+  padding: 0 0 2em 0;
 }
 .main__socials li {
   display: flex;
@@ -69,6 +97,33 @@ a {
   font-size: 0.85rem;
   border: 1px solid hsl(0deg, 0%, 100%);
   border-radius: 50%;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.main__socials li:hover {
+  color: hsl(300deg, 69%, 71%);
+  border-color: hsl(300deg, 69%, 71%);
+}
+@media screen and (min-width: 1024px) {
+  .main__socials {
+    justify-content: flex-end;
+    padding: 0 3em 0 0;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__content {
+    padding: 3em 5em 0 0;
+    text-align: left;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2em;
+  }
 }
 
 .footer {
@@ -79,6 +134,11 @@ a {
   font-size: 0.9rem;
   line-height: 1.35;
 }
+@media screen and (min-width: 1024px) {
+  .footer__text {
+    margin-top: 0;
+  }
+}
 .footer__link {
   color: hsl(300deg, 69%, 71%);
   transition: color 0.2s ease-in-out;
@@ -88,6 +148,11 @@ a {
 }
 .footer__link:hover {
   color: #f6cbf6;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    margin-top: 0;
+  }
 }
 
 .button {
@@ -107,6 +172,16 @@ a {
 .button:active {
   background-color: #f4c3f4;
   color: hsl(0deg, 0%, 100%);
+}
+.button:hover {
+  background-color: #f4c3f4;
+  color: hsl(0deg, 0%, 100%);
+}
+@media screen and (min-width: 1024px) {
+  .button {
+    margin-left: 0;
+    height: 3.15em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
